@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/Lucas/CLionProjects/werkaub/basicincludes.hpp
+iostream
+-
+
+/Users/Lucas/CLionProjects/werkaub/main.cpp
+math.hpp
+/Users/Lucas/CLionProjects/werkaub/math.hpp
+basicincludes.hpp
+/Users/Lucas/CLionProjects/werkaub/basicincludes.hpp
+
+/Users/Lucas/CLionProjects/werkaub/math.hpp
+vectors.hpp
+/Users/Lucas/CLionProjects/werkaub/vectors.hpp
+
+/Users/Lucas/CLionProjects/werkaub/vectors.cpp
+math.hpp
+/Users/Lucas/CLionProjects/werkaub/math.hpp
+basicincludes.hpp
+/Users/Lucas/CLionProjects/werkaub/basicincludes.hpp
+
+/Users/Lucas/CLionProjects/werkaub/vectors.hpp
+basicincludes.hpp
+/Users/Lucas/CLionProjects/werkaub/basicincludes.hpp
+
