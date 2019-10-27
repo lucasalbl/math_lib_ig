@@ -3,4 +3,4 @@ project(debug)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(MAIN main.cpp vectors.cpp vectors.hpp basicincludes.hpp math.hpp)
+add_executable(MAIN main.cpp vectors.cpp vectors.hpp basic_includes.hpp math.hpp math_functions.cpp math_functions.hpp)

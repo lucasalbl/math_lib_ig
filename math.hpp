@@ -6,5 +6,6 @@
 #define MAIN_MATH_HPP
 
 #include "vectors.hpp"
+#include "math_functions.hpp"
 
 #endif //MAIN_MATH_HPP

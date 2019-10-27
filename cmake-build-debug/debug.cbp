@@ -89,6 +89,12 @@
 		<Unit filename="/Users/Lucas/CLionProjects/werkaub/math.hpp">
 			<Option target="MAIN"/>
 		</Unit>
+		<Unit filename="/Users/Lucas/CLionProjects/werkaub/math_functions.cpp">
+			<Option target="MAIN"/>
+		</Unit>
+		<Unit filename="/Users/Lucas/CLionProjects/werkaub/math_functions.hpp">
+			<Option target="MAIN"/>
+		</Unit>
 		<Unit filename="/Users/Lucas/CLionProjects/werkaub/vectors.cpp">
 			<Option target="MAIN"/>
 		</Unit>

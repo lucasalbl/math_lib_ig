@@ -150,6 +150,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/MAIN.dir/build.make CMakeFiles/MAIN.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+math_functions.o: math_functions.cpp.o
+
+.PHONY : math_functions.o
+
+# target to build an object file
+math_functions.cpp.o:
+	$(MAKE) -f CMakeFiles/MAIN.dir/build.make CMakeFiles/MAIN.dir/math_functions.cpp.o
+.PHONY : math_functions.cpp.o
+
+math_functions.i: math_functions.cpp.i
+
+.PHONY : math_functions.i
+
+# target to preprocess a source file
+math_functions.cpp.i:
+	$(MAKE) -f CMakeFiles/MAIN.dir/build.make CMakeFiles/MAIN.dir/math_functions.cpp.i
+.PHONY : math_functions.cpp.i
+
+math_functions.s: math_functions.cpp.s
+
+.PHONY : math_functions.s
+
+# target to generate assembly for a file
+math_functions.cpp.s:
+	$(MAKE) -f CMakeFiles/MAIN.dir/build.make CMakeFiles/MAIN.dir/math_functions.cpp.s
+.PHONY : math_functions.cpp.s
+
 vectors.o: vectors.cpp.o
 
 .PHONY : vectors.o
@@ -189,6 +216,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... math_functions.o"
+	@echo "... math_functions.i"
+	@echo "... math_functions.s"
 	@echo "... vectors.o"
 	@echo "... vectors.i"
 	@echo "... vectors.s"

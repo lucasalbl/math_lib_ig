@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/MAIN.dir/main.cpp.o"
+  "CMakeFiles/MAIN.dir/math_functions.cpp.o"
   "CMakeFiles/MAIN.dir/vectors.cpp.o"
   "MAIN"
   "MAIN.pdb"
