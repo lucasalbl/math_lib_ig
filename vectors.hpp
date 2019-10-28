@@ -11,8 +11,11 @@ class Vector2D {
 	friend std::ostream& operator<<(std::ostream &os, Vector2D const &v);
 public:
 	double x = 0,y = 0;
+	Vector2D();
 	Vector2D(float, float);
 	Vector2D(double, double);
+	static double DotProduct(Vector2D, Vector2D);
+
 };
 
 
