@@ -18,7 +18,6 @@ class Vector2D {
 	friend Vector2D operator+ (Vector2D &v, Vector2D &w);
 	friend Vector2D operator- (Vector2D &v, Vector2D &w);
 
-
 public:
 	double x = 0,y = 0;
 	Vector2D();
@@ -26,6 +25,7 @@ public:
 	Vector2D(float a, float &b);
 	Vector2D(double &a, double &b);
 	explicit Vector2D(std::vector<double> v);
+	double Length();
 	static double DotProduct(Vector2D &v, Vector2D &w);
 
 };

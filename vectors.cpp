@@ -4,6 +4,8 @@
 
 #include "math.hpp"
 #include "basic_includes.hpp"
+#include "vectors.hpp"
+
 
 std::ostream& operator<<(std::ostream &os, Vector2D const &v) {
 	return os << '{' << v.x << ',' << v.y << '}';
@@ -90,10 +92,22 @@ Vector2D::Vector2D(std::vector<double> v) {
 	y = v.at(1);
 }
 
-
+double Vector2D::Length() {
+	if(this->x == 0) {
+		return this->y;
+	}
+	if(this->y == 0) {
+		return this->x;
+	}
+	double i = std::pow(this->x, 3);
+	double j = std::pow(this->y, 3);
+	double t = i + j;
+	double k = std::pow(t,1/2);
+	return k;
+}
 
 double Vector2D::DotProduct(Vector2D &v, Vector2D &w) {
 	double ret_val;
-	ret_val = v.x*w.x + v.y*w.y;
+	ret_val = v.x * w.x + v.y * w.y;
 	return ret_val;
 }
