@@ -7,5 +7,6 @@
 
 #include "vectors.hpp"
 #include "math_functions.hpp"
+#include <cmath>
 
 #endif //MAIN_MATH_HPP
