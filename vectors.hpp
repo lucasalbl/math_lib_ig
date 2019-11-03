@@ -12,9 +12,6 @@ class Vector2D {
 	friend Vector2D operator* (int a, Vector2D &w);
 	friend Vector2D operator* (float a, Vector2D &w);
 	friend Vector2D operator* (double a, Vector2D &w);
-	friend Vector2D operator* (Vector2D &v, int &b);
-	friend Vector2D operator* (Vector2D &v, float &b);
-	friend Vector2D operator* (Vector2D &v, double &b);
 	friend Vector2D operator+ (Vector2D &v, Vector2D &w);
 	friend Vector2D operator- (Vector2D &v, Vector2D &w);
 
@@ -24,9 +21,10 @@ public:
 	Vector2D(int a, int &b);
 	Vector2D(float a, float &b);
 	Vector2D(double &a, double &b);
-	explicit Vector2D(std::vector<double> v);
+	explicit Vector2D(std::vector<double> &v);
 	double Length();
 	static double DotProduct(Vector2D &v, Vector2D &w);
+	static double Distance(Vector2D &v, Vector2D &w);
 
 };
 
