@@ -18,13 +18,14 @@ class Vector2D {
 public:
 	double x = 0,y = 0;
 	Vector2D();
-	Vector2D(int a, int &b);
-	Vector2D(float a, float &b);
-	Vector2D(double &a, double &b);
+	Vector2D(int a, int b);
+	Vector2D(float a, float b);
+	Vector2D(double a, double b);
 	explicit Vector2D(std::vector<double> &v);
-	double Length();
-	static double DotProduct(Vector2D &v, Vector2D &w);
-	static double Distance(Vector2D &v, Vector2D &w);
+
+	double length();
+	static double dotProduct(Vector2D &v, Vector2D &w);
+	static double distance(Vector2D &v, Vector2D &w);
 
 };
 

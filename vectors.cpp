@@ -51,17 +51,17 @@ Vector2D::Vector2D(){
 	y = 0.0;
 }
 
-Vector2D::Vector2D(int a, int &b){
+Vector2D::Vector2D(int a, int b){
 	x = a;
 	y = b;
 }
 
-Vector2D::Vector2D(float a, float &b){
+Vector2D::Vector2D(float a, float b){
 	x = a;
 	y = b;
 }
 
-Vector2D::Vector2D(double &a, double &b) {
+Vector2D::Vector2D(double a, double b) {
 	x = a;
 	y = b;
 }
@@ -71,7 +71,7 @@ Vector2D::Vector2D(std::vector<double> &v) {
 	y = v.at(1);
 }
 
-double Vector2D::Length() {
+double Vector2D::length() {
 	if(this->x == 0) {
 		return this->y;
 	}
@@ -83,15 +83,15 @@ double Vector2D::Length() {
 	return std::pow((i + j),0.5);
 }
 
-double Vector2D::DotProduct(Vector2D &v, Vector2D &w) {
+double Vector2D::dotProduct(Vector2D &v, Vector2D &w) {
 	double ret_val;
 	ret_val = v.x * w.x + v.y * w.y;
 	return ret_val;
 }
 
-double Vector2D::Distance(Vector2D &v, Vector2D &w) {
+double Vector2D::distance(Vector2D &v, Vector2D &w) {
 	Vector2D d;
 	d.x = w.x - v.x;
 	d.y = w.y - v.y;
-	return d.Length();
+	return d.length();
 }
