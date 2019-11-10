@@ -1,2 +1,2 @@
 # math_lib_ig
-Simple mathlibrary in c++, mostly focussed on fast 2DVector-math for real time 2D fluid simulation.
+Simple math library in c++, mostly focussed on fast 2DVector-math for real time 2D fluid simulation.
